@@ -257,10 +257,12 @@ footer p {
 }
 
 .legenda {
-    width: 60%
+    width: 50%
     margin-top: 0%;
     margin-bottom: 30px;
     font-family: var(--fonte_titulo);
     background-color : var(--marrom_escuro);
     color: var(--bege);
+    padding: 10px;
+    border-radius: 5px;
 }
