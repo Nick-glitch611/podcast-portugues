@@ -257,8 +257,8 @@ footer p {
 }
 
 .legenda {
-    width: 65%;
-    min-height: 20px;
+    width: 50%;
+    height: 40px; /* espaço sempre reservado */
     font-family: var(--fonte-titulo);
     background-color: var(--marrom_escuro);
     color: var(--bege);
@@ -266,6 +266,8 @@ footer p {
     border-radius: 5px;
     margin: 20px auto;
     box-sizing: border-box;
+
+    visibility: hidden;
 }
 
 @media (max-width: 600px) {
