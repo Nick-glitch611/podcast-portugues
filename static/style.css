@@ -257,6 +257,8 @@ footer p {
 }
 
 .legenda {
+    width: 60%
     margin-top: 0%;
     margin-bottom: 30px;
+    font-family: var(--fonte_titulo)
 }
