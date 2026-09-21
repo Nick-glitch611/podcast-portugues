@@ -11,6 +11,6 @@ track.addEventListener("cuechange", () => {
     if (cue) {
         legenda.textContent = cue.text;
     } else {
-        legenda.textContent = "";
+        legenda.textContent = " ";
     }
 });
