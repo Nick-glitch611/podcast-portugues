@@ -258,7 +258,7 @@ footer p {
 
 .legenda {
     width: 50%;
-    height: 40px; /* espaço sempre reservado */
+    height: fit-content;
     font-family: var(--fonte-titulo);
     background-color: var(--marrom_escuro);
     color: var(--bege);
