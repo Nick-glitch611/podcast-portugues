@@ -10,7 +10,9 @@ track.addEventListener("cuechange", () => {
 
     if (cue) {
         legenda.textContent = cue.text;
+        legenda.style.visibility = "visible";
     } else {
-        legenda.textContent = " ";
+        legenda.textContent = "";
+        legenda.style.visibility = "hidden";
     }
 });
