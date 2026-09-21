@@ -260,5 +260,7 @@ footer p {
     width: 60%
     margin-top: 0%;
     margin-bottom: 30px;
-    font-family: var(--fonte_titulo)
+    font-family: var(--fonte_titulo);
+    background-color : var(--marrom_escuro);
+    color: var(--bege);
 }
