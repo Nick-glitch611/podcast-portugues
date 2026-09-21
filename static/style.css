@@ -114,6 +114,15 @@ a {
     text-align: center;
 }
 
+.cabecalho-episodio {
+    width: 100%;
+    min-height: 125px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .eps {
     font-family: var(--fonte-subtitulo);
     color: var(--bege);
@@ -148,7 +157,7 @@ a {
 .subtitulo {
     width: auto;
     max-width: 500px;
-    margin: 0 0 25px;
+    margin: 0;
     font-family: var(--fonte-titulo);
     font-size: 30px;
     text-align: center;
@@ -187,7 +196,7 @@ a {
 }
 
 audio {
-    width: 70%;
+    width: 40%;
     max-width: 500px;
     height: 55px;
     margin: 15px auto;
@@ -216,16 +225,27 @@ figure {
     margin-bottom: 0%;
 }
 
+.container-legenda {
+    width: 100%;
+    max-width: 500px;
+    height: 100px;
+    margin: 5px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
 .legenda {
-    width: 70%;
+    width: 100%;
     height: fit-content;
-    min-height: 44px;
+    max-height: 80px;
+    overflow: hidden;
     font-family: var(--fonte-titulo);
     background-color: var(--marrom_escuro);
     color: var(--bege);
     padding: 10px;
     border-radius: 5px;
-    margin: 20px auto;
+    margin: 0;
     box-sizing: border-box;
     visibility: hidden;
 }
@@ -258,6 +278,14 @@ figure {
         width: auto;
         max-width: 95%;
         object-fit: contain;
+    }
+
+    .info-episodio {
+        width: 100%;
+    }
+
+    .cabecalho-episodio {
+        min-height: 115px;
     }
 
     .titulo1 {
@@ -309,8 +337,14 @@ figure {
         padding: 15px;
     }
 
-    .legenda {
+    .container-legenda {
         width: 90%;
+        height: 100px;
+    }
+
+    .legenda {
+        width: 100%;
+        max-height: 80px;
     }
 
     footer {
