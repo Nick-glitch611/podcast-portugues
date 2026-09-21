@@ -236,7 +236,6 @@ figure {
 .legenda {
     width: 100%;
     height: fit-content;
-    max-height: 80px;
     overflow: hidden;
     font-family: var(--fonte-titulo);
     background-color: var(--marrom_escuro);
