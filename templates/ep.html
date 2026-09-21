@@ -4,27 +4,30 @@
 
 {% block main %}
 
-<div class="info-episodio">
-    <div class="cabecalho-episodio">
-        <h2 class="titulo1">Episódio 01:</h2>
-        <h2 class="subtitulo">Acidentes que viraram invenções</h2>
+<article class="episodio">
+
+    <div class="capa">
+        <figure>
+            <img class="logoep" src="{{ url_for('static', filename='images/logo.png') }}" alt="Capa do podcast">
+        </figure>
     </div>
 
-    <audio id="audio" controls>
-        <source src="{{ url_for('static', filename='áudio/podcast.mp3') }}" type="audio/mpeg">
+    <div class="info-episodio">
+        <div class="cabecalho-episodio">
+            <h2 class="titulo1">Episódio 01:</h2>
+            <h2 class="subtitulo">Acidentes que viraram invenções</h2>
+        </div>
 
-        <track
-            src="{{ url_for('static', filename='áudio/legenda.vtt') }}"
-            kind="subtitles"
-            srclang="pt-BR"
-            label="Português"
-            default
-        >
-    </audio>
+        <audio id="audio" controls>
+            <source src="{{ url_for('static', filename='áudio/podcast.mp3') }}" type="audio/mpeg">
+            <track src="{{ url_for('static', filename='áudio/legenda.vtt') }}" kind="subtitles" srclang="pt-BR" label="Português" default>
+        </audio>
 
-    <div class="container-legenda">
-        <p class="legenda" id="legenda"></p>
+        <div class="container-legenda">
+            <p class="legenda" id="legenda"></p>
+        </div>
     </div>
-</div>
+
+</article>
 
 {% endblock %}
